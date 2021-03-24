@@ -33,7 +33,7 @@
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31FC533020AD7A46B966DF0DA6B75D13/Field/=INTERFACE/InitialSection/@EntryValue">D30F4EEC5D895F4E93A11D64D3D9BE41</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31FC533020AD7A46B966DF0DA6B75D13/Field/=INTERFACEVARIABLE/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31FC533020AD7A46B966DF0DA6B75D13/Field/=INTERFACEVARIABLE/Expression/@EntryValue">suggestVariableName()</s:String>
-	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31FC533020AD7A46B966DF0DA6B75D13/Field/=INTERFACEVARIABLE/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31FC533020AD7A46B966DF0DA6B75D13/Field/=INTERFACEVARIABLE/InitialRange/@EntryValue">-1</s:Int64>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31FC533020AD7A46B966DF0DA6B75D13/Field/=INTERFACEVARIABLE/Order/@EntryValue">4</s:Int64>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31FC533020AD7A46B966DF0DA6B75D13/Field/=INTERFACEVARIABLE/InitialSection/@EntryValue">D30F4EEC5D895F4E93A11D64D3D9BE41</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=31FC533020AD7A46B966DF0DA6B75D13/Field/=QUERYMETHOD/@KeyIndexDefined">True</s:Boolean>
@@ -61,7 +61,7 @@ $HEADER$namespace $NAMESPACE$&#xD;
 {&#xD;
     public class $QUERY$QueryHandler : IQueryHandler&lt;$QUERY$Query, $QUERY$Result&gt;&#xD;
     {&#xD;
-		public readonly $INTERFACE$ _$INTERFACEVARIABLE$;&#xD;
+		private readonly $INTERFACE$ _$INTERFACEVARIABLE$;&#xD;
 &#xD;
         public $QUERY$QueryHandler($INTERFACE$ $INTERFACEVARIABLE$)&#xD;
         {&#xD;

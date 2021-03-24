@@ -1,0 +1,60 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Description/@EntryValue">Service</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Text/@EntryValue">using System.Threading.Tasks;&#xD;
+using CW.Contracts.CQRS;&#xD;
+&#xD;
+$HEADER$namespace $NAMESPACE$&#xD;
+{&#xD;
+	public class $CLASS$ : I$CLASS$&#xD;
+	{&#xD;
+		private readonly IQueryExecutor _queryExecutor;&#xD;
+&#xD;
+		public $CLASS$(IQueryExecutor queryExecutor)&#xD;
+        {&#xD;
+			_queryExecutor = queryExecutor;&#xD;
+		}&#xD;
+&#xD;
+		public Task&lt;$INPUTTYPE$Result&gt; $INPUTTYPE$($INPUTTYPE$Args args)&#xD;
+		{&#xD;
+			var query = new $INPUTTYPE$Query { $END$ };&#xD;
+			return _queryExecutor.HandleAsync(query);&#xD;
+		}&#xD;
+	}&#xD;
+}</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/UITag/@EntryValue">Class/Interface</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/CustomProperties/=FileName/@EntryIndexedValue">Service</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=HEADER/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=HEADER/Expression/@EntryValue">fileheader()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=HEADER/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=NAMESPACE/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=NAMESPACE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=CLASS/Expression/@EntryValue">getAlphaNumericFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=CLASS/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=CLASS/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=INPUTTYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=INPUTTYPE/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Field/=INPUTTYPE/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Section/=B73A65FBB3C23E4195ED0DB9841F7C2B/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Section/=B73A65FBB3C23E4195ED0DB9841F7C2B/LocationSelectorName/@EntryValue">manual</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Section/=B73A65FBB3C23E4195ED0DB9841F7C2B/LocationSelectorConfig/@EntryValue">&lt;RelativeConfig File="I$NAME$.cs" /&gt;</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Section/=B73A65FBB3C23E4195ED0DB9841F7C2B/Order/@EntryValue">0</s:Int64>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=015B6A1AD7603D4A9238525379BE5552/Section/=B73A65FBB3C23E4195ED0DB9841F7C2B/SectionPlain/Text/@EntryValue">using System.Threading.Tasks;&#xD;
+&#xD;
+$HEADER$namespace $NAMESPACE$&#xD;
+{&#xD;
+	public interface I$CLASS$ &#xD;
+	{&#xD;
+		Task&lt;$INPUTTYPE$Result&gt; $INPUTTYPE$($INPUTTYPE$Args args);&#xD;
+	}&#xD;
+}</s:String></wpf:ResourceDictionary>
