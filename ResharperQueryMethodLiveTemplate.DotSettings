@@ -4,7 +4,9 @@
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1948E32825CE9A469A3777B927052596/Description/@EntryValue">Method to insert into a query Service</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1948E32825CE9A469A3777B927052596/Text/@EntryValue">public Task&lt;$name$Result&gt; $name$($name$Args args)&#xD;
 {&#xD;
-	return _queryExecutor.HandleAsync(new $name$Query { $END$ });&#xD;
+	var query = new $name$Query{ $END$ };&#xD;
+&#xD;
+	return _queryExecutor.HandleAsync(query);&#xD;
 }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1948E32825CE9A469A3777B927052596/Reformat/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1948E32825CE9A469A3777B927052596/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
